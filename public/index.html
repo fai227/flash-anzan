@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フラッシュ暗算</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./load.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./room.css">
+    <link rel="stylesheet" href="./problem.css">
+    <link rel="stylesheet" href="./answer.css">
+    <link rel="stylesheet" href="./battle.css">
+</head>
+
+<body>
+    <div id="load" class="fullScreen">
+        <div id="loadWrapper" class="fullScreen">
+            <img src="./load.jpeg" alt="./load.jpeg">
+        </div>
+    </div>
+    <div id="home" style="display: none;">
+        <div id="title" class="autoMargin">
+            フラッシュ<br>暗算
+        </div>
+        <input type="text" id="playerName" class="autoMargin" maxlength="10" placeholder="プレイヤー名">
+        <input type="text" id="roomName" class="autoMargin" maxlength="10" placeholder="部屋の名前">
+        <button class="autoMargin" id="startButton" onclick="startGame()">ゲーム開始</button>
+        <div id="footer">
+            <a href="https://fai227.github.io/Home/" target="_blank">ファイ</a>作成
+        </div>
+    </div>
+    <div id="room" style="display: none;">
+        <h1>参加者を待っています…</h1>
+        <div>
+            <h2 class="info">部屋名</h2>
+            <p class="description" id="roomNameBox"></p>
+        </div>
+        <div>
+            <h2 class="info">参加プレイヤー</h2>
+            <p class="description" id="playerNames"></p>
+        </div>
+        <button>ゲーム開始</button>
+    </div>
+    <div id="problem" class="fullScreen" style="display: none;">
+        <div id="problemWrapper" class="fullScreen">
+            <span id="problemBox">③</span>
+        </div>
+    </div>
+    <div id="answer"></div>
+    <div id="battle"></div>
+</body>
+
+<script src="./scene.js"></script>
+<script src="./script.js"></script>
+
+</html>

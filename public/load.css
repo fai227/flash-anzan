@@ -1,0 +1,23 @@
+#loadWrapper {
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadWrapper>img {
+    height: min(30vh, 30vw);
+
+    animation: loading 1s steps(12, end) infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

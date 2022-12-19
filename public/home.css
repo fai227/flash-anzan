@@ -1,0 +1,41 @@
+#title {
+    font-size: 10vh;
+
+    writing-mode: vertical-rl;
+
+    height: 60vh;
+}
+
+#home>input {
+    display: block;
+
+    height: 7.5vh;
+    width: min(50vw, 700px);
+
+    font-size: 5vh;
+    text-align: center;
+
+    border: 5px solid black;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    font-family: "Eng", "Jap";
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+
+    height: 5vh;
+    width: 100vw;
+
+    text-align: center;
+    font-size: 4vh;
+
+    overflow: hidden;
+}
+
+#footer>a {
+    text-decoration: none;
+}

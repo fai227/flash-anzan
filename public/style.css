@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Jap";
+    src: url(./jap.ttf);
+}
+
+@font-face {
+    font-family: "Eng";
+    src: url(./eng.otf);
+}
+
+html,
+body {
+    font-family: "Eng", "Jap";
+    text-align: center;
+}
+
+.autoMargin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: min(35vw, 400px);
+    height: 7.5vh;
+
+    border: 5px solid black;
+    font-size: 5vh;
+
+    font-family: "Eng", "Jap";
+}
+
+button:active {
+    background-color: gray;
+}
+
+.fullScreen {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
